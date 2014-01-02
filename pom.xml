@@ -10,13 +10,7 @@
 		<dependency>
 			<groupId>org.apache.lucene</groupId>
 			<artifactId>lucene-core</artifactId>
-			<version>3.0.3</version>
-			<optional>true</optional>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.solr</groupId>
-			<artifactId>solr-core</artifactId>
-			<version>1.4.1</version>
+			<version>4.6.0</version>
 			<optional>true</optional>
 		</dependency>
 		<dependency>
@@ -33,9 +27,22 @@
 		</dependency>
 		<dependency>
 			<groupId>org.apache.lucene</groupId>
-			<artifactId>lucene-smartcn</artifactId>
-			<version>3.0.3</version>
+			<artifactId>lucene-queryparser</artifactId>
+			<version>4.6.0</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.lucene</groupId>
+			<artifactId>lucene-analyzers-common</artifactId>
+			<version>4.6.0</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+	<distributionManagement>
+		<repository>
+			<id>nexus-snapshots</id>
+			<name>nexus-snapshots</name>
+			<url>http://172.29.34.116:9000/nexus/content/repositories/snapshots/</url>
+		</repository>
+	</distributionManagement>
 </project>
